@@ -1,4 +1,28 @@
+:root {
+  --primary: #D47E27;
+    --secondary: #51A88B;
+}
+
 body {
   min-height: 100vh;
   background: linear-gradient(rgb(127, 165, 37), rgb(117, 204, 179));
+}
+
+.section-title {
+  font-size: 3rem;
+  border-bottom: 5px solid var(--secondary);
+  width: 250px;
+  margin: 5 rem auto;
+}
+
+.skill-list {
+  font-size: 3rem;
+}
+
+.project-section {
+  background: rgb(123, 138, 101);
+}
+
+.about-me-img {
+  background: rgb(180, 95, 95);
 }
