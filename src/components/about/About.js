@@ -5,7 +5,7 @@ import imgProfile from '../../assets/pd.png'
 
 export const About = () => {
   return (
-    <section id= "about">
+    <section id= "about-me">
         <SectionTitle title="About Me"/>
         <Container>
             <Row>

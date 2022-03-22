@@ -5,7 +5,7 @@ import proj from "../../assets/ss1.png";
 
 export const Projects = () => {
   return (
-    <section className='project-section'>
+    <section id="projects" className='project-section'>
         <Container>
             <Row>
                 <Col>
