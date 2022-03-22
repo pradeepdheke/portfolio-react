@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Header } from '../Layout/Header';
 import './hero.css';
-import me from "../../assets/pd.png"
+import me from "../../assets/pds.png"
 
 export const Hero = () => {
   return (
