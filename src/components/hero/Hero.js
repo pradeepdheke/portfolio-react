@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { Header } from '../Layout/Header';
 import './hero.css';
 import me from "../../assets/pd.png"
@@ -7,13 +7,15 @@ import me from "../../assets/pd.png"
 export const Hero = () => {
   return (
     <div className='hero'>
-        <Header/>
+        {/* <Header/> */}
+        <Container>
 
         <Row className='mt-5 pb-3'>
             <Col md="5" className='text-center order-md-2 mb-5'>
                 <img src={me} width="40%" alt="" border-radius="50%"/>
             </Col>
             <Col>
+          
             <div className="mb-3 pt-3">
                 Hi, I am Pradeep Dheke.
             </div>
@@ -23,6 +25,7 @@ export const Hero = () => {
                     </button>
             </Col>
         </Row>
+        </Container>
     </div>
   )
 }

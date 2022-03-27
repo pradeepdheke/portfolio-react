@@ -1,21 +1,41 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../assets/logo.svg';
+import { LinkContainer } from 'react-router-bootstrap';
 
 export const Header = () => {
   return (
-    <Navbar id='navbar' expand="lg">
+    <Navbar expand="md" collapseOnSelect id ="navbar">
   <Container>
-    <Navbar.Brand href="#home">
+    {/* <Navbar.Brand href="#home"> */}
+    <LinkContainer to = "/">
+      <Nav.Link>
+
+
         <img src={logo} alt="logo" width= "80px" />
-    </Navbar.Brand>
+      </Nav.Link>
+    {/* </Navbar.Brand> */}
+    </LinkContainer>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto fw-bolder">
-        <Nav.Link href="#skills">Skills</Nav.Link>
-        <Nav.Link href="#projects">Projects</Nav.Link>
-        <Nav.Link href="#about-me">About me</Nav.Link>
-        <Nav.Link href="#contact">Contact</Nav.Link>
+        <LinkContainer to = "/skills">
+          
+        <Nav.Link>Skills</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to = "/projects">
+
+        <Nav.Link>Projects</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to = "/about-me">
+          
+        <Nav.Link>About me</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to = "/contact">
+        </LinkContainer>
+        <Nav.Link>Contact</Nav.Link>
+          
       </Nav>
     </Navbar.Collapse>
   </Container>

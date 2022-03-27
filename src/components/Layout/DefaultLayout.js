@@ -1,12 +1,12 @@
 import React from 'react';
 import { GoUp } from '../go-up/GoUp';
-import { Hero } from '../hero/Hero';
 import { Footer } from './Footer';
+import { Header } from './Header';
 
-const DefaultLayout = ({children}) => {
+export const DefaultLayout = ({children}) => {
   return (
     <div className='layout'>
-        <Hero/>
+        <Header/>
 
 
         <main>{children}</main>
