@@ -9,32 +9,35 @@ export const Header = () => {
     <Navbar expand="md" collapseOnSelect id ="navbar">
   <Container>
     {/* <Navbar.Brand href="#home"> */}
-    <LinkContainer to = "/">
+     <LinkContainer to = "/">
       <Nav.Link>
 
 
         <img src={logo} alt="logo" width= "80px" />
       </Nav.Link>
     {/* </Navbar.Brand> */}
-    </LinkContainer>
+    </LinkContainer> 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto fw-bolder">
-        <LinkContainer to = "/skills">
+     <LinkContainer to = "/skills">
           
         <Nav.Link>Skills</Nav.Link>
         </LinkContainer>
-        <LinkContainer to = "/projects">
+        
+       <LinkContainer to = "/projects">
 
         <Nav.Link>Projects</Nav.Link>
         </LinkContainer>
+       
         <LinkContainer to = "/about-me">
           
         <Nav.Link>About me</Nav.Link>
         </LinkContainer>
+       
         <LinkContainer to = "/contact">
-        </LinkContainer>
-        <Nav.Link>Contact</Nav.Link>
+        <Nav.Link>Contact</Nav.Link> 
+        </LinkContainer> 
           
       </Nav>
     </Navbar.Collapse>

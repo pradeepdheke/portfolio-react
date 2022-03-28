@@ -9,12 +9,17 @@
   position: relative;
 }
 
+main {
+  min-height: 70vh;
+}
+
 .section-title {
   font-size: 3rem;
   border-bottom: 5px solid var(--secondary);
   width: 250px;
   margin: 5 rem auto;
 }
+
 
 .skill-list {
   font-size: 3rem;
@@ -26,4 +31,14 @@
 
 .about-me-img {
   background: rgb(180, 95, 95);
+}
+
+/* slider of vslide*/
+.slider {
+  color: red;
+  position: fixed;
+  right: 10px;
+  top: 50vh;
+  height: 30px;
+  width: 30px;
 }
